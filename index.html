@@ -886,9 +886,9 @@ this.localInterfaces.forEach(ip => {
             const subnet = octets.slice(0, 3).join('.');
             
             // Append common gateway addresses
-            gateways.add(`${subnet}.1`);   // Primary router guess
-            gateways.add(`${subnet}.254`); // Secondary common gateway
-            gateways.add(`${subnet}.100`); // Common DHCP start range
+            gateways.add(\`\${subnet}.1\`);   // Primary router guess
+            gateways.add(\`\${subnet}.254\`); // Secondary common gateway
+            gateways.add(\`\${subnet}.100\`); // Common DHCP start range
         }
     }
 });
