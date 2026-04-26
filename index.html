@@ -1074,7 +1074,7 @@ function renderArticleList() {
         li.className = "article-entry"; 
         li.style.marginBottom = "15px";
         li.innerHTML = `
-            <div style="font-size: 11px; opacity: 0.6; text-transform: uppercase;">${article.date}</div>
+            <div style="font-size: 11px; text-transform: uppercase;">${article.date}</div>
             <a href="javascript:void(0)" onclick="openArticle('${article.id}')" 
                style="font-size: 18px; color: var(--text-color); text-decoration: none; font-weight: bold;">
                ${article.title}
