@@ -275,24 +275,10 @@ code[class*="language-"] {
     color: #5C9DFF; /* Optional: A soft Nord red to make it pop */
 }
  /* The Secret Text Trick */
-.hidden-word {
-    color: var(--bg-color); /* Matches the background exactly */
-    transition: color 0.2s ease;
-    user-select: text; /* Ensures it can still be highlighted */
-}
+
 
 /* This makes the text pop out when the user highlights it */
-.hidden-word::selection {
-    background-color: var(--link-color); /* Uses your red accent */
-    color: #ffffff; /* White text when highlighted */
-}
 
-/* Optional: Reveal on hover if you want it to be slightly easier */
-.hidden-word:hover {
-    cursor: help;
-    /* Uncomment the line below if you want it to show on hover too */
-    /* color: var(--text-color); */
-}
  /* Add to your <style> block */
 .toggle-btn {
     cursor: pointer;
@@ -427,7 +413,7 @@ code:not([class*="language-"]) {
             <div class="fact-box">
     
         this page has <a href="step1.html" style="text-decoration: none; color: #D8DEE9;">secrets...</a><img src="data:image/gif;base64,R0lGODlhHgAeAPUAAP///+//773//733/733vbXm/63vrYT/hJzm1q3mrb3eva3W/5TmlKXO/5TelITWrZnMmYTOhHvOe5y1/3PFlGvFa2PFY1q9WoyU/0q1SkKtQjqlOjOZMyGUKRmUGRCMEAiECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAHACwAAAAAHgAeAAAG/8BD6ACihIqhpHLJbApBIUgAIqWGOFIOhxIIKb6cwDf0eCShUkWg6/1OxYB0HBCaks/RrvrLF8PDEFp0dmZHRxwhFBwgUFqIjleLV1dQhY1QF02aTCCIlpQhmQ8YGA+KEBQai4ydEYd3hpKim00Vr5+ysKZYqatQIbadsJehd0ibUMGeeLlmW0m+Ssm3zJjGRltajHjKw6CzSFBCRNzUsdZm4dCGht246EdGvxrs08LvxenySfS/9svn8sW7gqpfuXvVBBYRooRcO3PEwD1YpGjVQYARYa2KdtFbM1rSgEH8lojUroIc3SXMBJKJyoAUypg81YtVq5GSWiIDiKhTTkOdS7QkigJgzR4QYNpo+QIBKQemWMCkUdBGjJqocboAQCQlxJwqU5/yCbQnq9cqWrdIoVBEqFArUaggadrUCASCRoIAACH5BAUKACIALAMAAAAYAAUAAAZIQBFHJCQaj0ikhiFabjYiUEbyAXGYkooFxKhImgcvU2SRSBgbyeWgCbMPIoZmKap0tebDRX34yKtwclF1IEYdhyKHHVGLiYNBACH5BAkKACIALAAAAAAeAB4AAAaqQJFQRBEWh8ikUgkJiJoQiIjT5HAoToWWE9Aum4qAU6QNgwFnCEAUkCab5G45TAdwIdZ1e8kh9oVWfYFTf4JLh4iJiouMjY6PkJGSk5SVlpeYmZqbnJ2en6Chnh9CHR2XGgcSEhcSFSIVFSCwFR8fsRuwtxW5G7EfGgyxtAyrDMAXB8EiB7PLytAawcOxqxogrcnPGwzPHxzBgrYi49JC0hpTIunpfenAfUEAOw==" alt="">
-        <span class="hidden-word">check the source genius!</span>
+        
 </div>
 
             <div class="container">
