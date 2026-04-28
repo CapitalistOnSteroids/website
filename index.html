@@ -132,48 +132,48 @@
                 <p>Click on any file or folder to see the source codes in raw form.</p>
                 
 <pre id="ascii-tree">
-<span class="folder toggle-btn" onclick="toggleDir('dir-root', this)">[+] projects/</span><span id="dir-root" style="display: none;">
-<span class="tree-line">├──</span> <span class="folder toggle-btn" onclick="toggleDir('dir-etcan', this)">[+] EtCAN/</span><span id="dir-etcan" style="display: none;">
+<input type="checkbox" id="dir-root" class="tree-checkbox"><label for="dir-root" class="folder toggle-btn">projects/</label><span class="tree-content">
+<span class="tree-line">├──</span> <input type="checkbox" id="dir-etcan" class="tree-checkbox"><label for="dir-etcan" class="folder toggle-btn">EtCAN/</label><span class="tree-content">
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/EtCAN/blob/main/index.html?raw=true">index.html</a>
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/EtCAN/blob/main/script.js?raw=true">script.js</a>
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/EtCAN/blob/main/README.md?raw=true">README.md</a>
 <span class="tree-line">│   └──</span> <a href="https://github.com/nulsie/EtCAN/blob/main/LICENSE?raw=true">LICENSE</a></span>
-<span class="tree-line">├──</span> <span class="folder toggle-btn" onclick="toggleDir('dir-lyca', this)">[+] LycaClient/</span><span id="dir-lyca" style="display: none;">
+<span class="tree-line">├──</span> <input type="checkbox" id="dir-lyca" class="tree-checkbox"><label for="dir-lyca" class="folder toggle-btn">LycaClient/</label><span class="tree-content">
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/LycaClient/blob/v1.3/privacy_policy.txt?raw=true">privacy_policy.txt(it's kinda non-existent)</a>
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/LycaClient/blob/v1.3/LICENSE.txt?raw=true">LICENSE.txt</a>
-<span class="tree-line">│   ├──</span> <span class="folder toggle-btn" onclick="toggleDir('dir-v13', this)">[+] v1.3/</span><span id="dir-v13" style="display: none;">
+<span class="tree-line">│   ├──</span> <input type="checkbox" id="dir-v13" class="tree-checkbox"><label for="dir-v13" class="folder toggle-btn">v1.3/</label><span class="tree-content">
 <span class="tree-line">│   │   ├──</span> <a href="https://github.com/nulsie/LycaClient/blob/v1.3/index.html?raw=true">index.html</a>
 <span class="tree-line">│   │   ├──</span> <a href="https://github.com/nulsie/LycaClient/blob/v1.3/script.js?raw=true">script.js</a>
 <span class="tree-line">│   │   ├──</span> <a href="https://github.com/nulsie/LycaClient/blob/v1.3/style.css?raw=true">style.css</a>
 <span class="tree-line">│   │   └──</span> <a href="https://github.com/nulsie/LycaClient/blob/v1.3/README.md?raw=true">README.md</a></span>
-<span class="tree-line">│   ├──</span> <span class="folder toggle-btn" onclick="toggleDir('dir-v12', this)">[+] v1.2/</span><span id="dir-v12" style="display: none;">
+<span class="tree-line">│   ├──</span> <input type="checkbox" id="dir-v12" class="tree-checkbox"><label for="dir-v12" class="folder toggle-btn">v1.2/</label><span class="tree-content">
 <span class="tree-line">│   │   ├──</span> <a href="https://github.com/nulsie/LycaClient/blob/v.1.2/index.html?raw=true">index.html</a>
 <span class="tree-line">│   │   ├──</span> <a href="https://github.com/nulsie/LycaClient/blob/v.1.2/script.js?raw=true">script.js</a>
 <span class="tree-line">│   │   ├──</span> <a href="https://github.com/nulsie/LycaClient/blob/v.1.2/style.css?raw=true">style.css</a>
 <span class="tree-line">│   │   └──</span> <a href="https://github.com/nulsie/LycaClient/blob/v.1.2/README.md?raw=true">README.md</a></span>
-<span class="tree-line">│   ├──</span> <span class="folder toggle-btn" onclick="toggleDir('dir-v11', this)">[+] v1.1/</span><span id="dir-v11" style="display: none;">
+<span class="tree-line">│   ├──</span> <input type="checkbox" id="dir-v11" class="tree-checkbox"><label for="dir-v11" class="folder toggle-btn">v1.1/</label><span class="tree-content">
 <span class="tree-line">│   │   ├──</span> <a href="https://github.com/nulsie/LycaClient/blob/v.1.1/index.html?raw=true">index.html</a>
 <span class="tree-line">│   │   ├──</span> <a href="https://github.com/nulsie/LycaClient/blob/v.1.1/script.js?raw=true">script.js</a>
 <span class="tree-line">│   │   ├──</span> <a href="https://github.com/nulsie/LycaClient/blob/v.1.1/style.css?raw=true">style.css</a>
 <span class="tree-line">│   │   └──</span> <a href="https://github.com/nulsie/LycaClient/blob/v.1.1/README.md?raw=true">README.md</a></span>
-<span class="tree-line">│   └──</span> <span class="folder toggle-btn" onclick="toggleDir('dir-feather', this)">[+] Feather/</span><span id="dir-feather" style="display: none;">
+<span class="tree-line">│   └──</span> <input type="checkbox" id="dir-feather" class="tree-checkbox"><label for="dir-feather" class="folder toggle-btn">Feather/</label><span class="tree-content">
 <span class="tree-line">│       ├──</span> <a href="https://github.com/nulsie/LycaClient/blob/v.Feather/index.html?raw=true">index.html</a>
 <span class="tree-line">│       ├──</span> <a href="https://github.com/nulsie/LycaClient/blob/v.Feather/script.js?raw=true">script.js</a>
 <span class="tree-line">│       ├──</span> <a href="https://github.com/nulsie/LycaClient/blob/v.Feather/style.css?raw=true">style.css</a>
 <span class="tree-line">│       └──</span> <a href="https://github.com/nulsie/LycaClient/blob/v.Feather/README.md?raw=true">README.md</a></span></span>
-<span class="tree-line">├──</span> <span class="folder toggle-btn" onclick="toggleDir('dir-coldstrain', this)">[+] ColdStrain/</span><span id="dir-coldstrain" style="display: none;">
+<span class="tree-line">├──</span> <input type="checkbox" id="dir-coldstrain" class="tree-checkbox"><label for="dir-coldstrain" class="folder toggle-btn">ColdStrain/</label><span class="tree-content">
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/ColdStrain/blob/main/ColdStrain.js?raw=true">ColdStrain.js</a>
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/ColdStrain/blob/main/DISCLAIMER.md?raw=true">DISCLAIMER.md</a>
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/ColdStrain/blob/main/DOCS.md?raw=true">DOCS.md</a>
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/ColdStrain/blob/main/LICENSE.txt?raw=true">LICENSE.txt</a>
 <span class="tree-line">│   └──</span> <a href="https://github.com/nulsie/ColdStrain/blob/main/README.md?raw=true">README.md</a></span>
-<span class="tree-line">├──</span> <span class="folder toggle-btn" onclick="toggleDir('dir-pies', this)">[+] PIES/</span><span id="dir-pies" style="display: none;">
+<span class="tree-line">├──</span> <input type="checkbox" id="dir-pies" class="tree-checkbox"><label for="dir-pies" class="folder toggle-btn">PIES/</label><span class="tree-content">
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/PIES/blob/main/PIES.html?raw=true">PIES.html</a>
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/PIES/blob/main/crypto-js.min.js?raw=true">crypto-js.min.js</a>
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/PIES/blob/main/3.4.17?raw=true">3.4.17</a>
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/PIES/blob/main/README.md?raw=true">README.md</a>
 <span class="tree-line">│   └──</span> <a href="https://github.com/nulsie/PIES/blob/main/LICENSE?raw=true">LICENSE</a></span>
-<span class="tree-line">├──</span> <span class="folder toggle-btn" onclick="toggleDir('dir-tish', this)">[+] TISH/</span><span id="dir-tish" style="display: none;">
+<span class="tree-line">├──</span> <input type="checkbox" id="dir-tish" class="tree-checkbox"><label for="dir-tish" class="folder toggle-btn">TISH/</label><span class="tree-content">
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/TISH/blob/main/index.html?raw=true">index.html</a>
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/TISH/blob/main/script.js?raw=true">script.js</a>
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/TISH/blob/main/style.css?raw=true">style.css</a>
@@ -181,18 +181,18 @@
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/TISH/blob/main/docs.html?raw=true">docs.html</a>
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/TISH/blob/main/README.md?raw=true">README.md</a>
 <span class="tree-line">│   └──</span> <a href="https://github.com/nulsie/TISH/blob/main/LICENSE?raw=true">LICENSE</a></span>
-<span class="tree-line">├──</span> <span class="folder toggle-btn" onclick="toggleDir('dir-piesimg', this)">[+] PIESImages/</span><span id="dir-piesimg" style="display: none;">
+<span class="tree-line">├──</span> <input type="checkbox" id="dir-piesimg" class="tree-checkbox"><label for="dir-piesimg" class="folder toggle-btn">PIESImages/</label><span class="tree-content">
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/PIESImages/blob/main/PIESImages.html?raw=true">PIESImages.html</a>
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/PIESImages/blob/main/crypto-js.min.js?raw=true">crypto-js.min.js</a>
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/PIESImages/blob/main/3.4.17?raw=true">3.4.17</a>
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/PIESImages/blob/main/README.md?raw=true">README.md</a>
 <span class="tree-line">│   └──</span> <a href="https://github.com/nulsie/PIESImages/blob/main/LICENSE.txt?raw=true">LICENSE.txt</a></span>
-<span class="tree-line">├──</span> <span class="folder toggle-btn" onclick="toggleDir('dir-flatbread', this)">[+] Flatbread.js/</span><span id="dir-flatbread" style="display: none;">
+<span class="tree-line">├──</span> <input type="checkbox" id="dir-flatbread" class="tree-checkbox"><label for="dir-flatbread" class="folder toggle-btn">Flatbread.js/</label><span class="tree-content">
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/Flatbread.js/tree/main/buttons">buttons</a>
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/Flatbread.js/blob/main/flatbread.js?raw=true">flatbread.js</a>
 <span class="tree-line">│   ├──</span> <a href="https://github.com/nulsie/Flatbread.js/blob/main/README.md?raw=true">README.md</a>
 <span class="tree-line">│   └──</span> <a href="https://github.com/nulsie/Flatbread.js/blob/main/database.json?raw=true">database.json</a></span>
-<span class="tree-line">└──</span> <span class="folder toggle-btn" onclick="toggleDir('dir-stan', this)">[+] STAN/</span><span id="dir-stan" style="display: none;">
+<span class="tree-line">└──</span> <input type="checkbox" id="dir-stan" class="tree-checkbox"><label for="dir-stan" class="folder toggle-btn">STAN/</label><span class="tree-content">
 <span class="tree-line">    ├──</span> <a href="https://github.com/nulsie/DevRepoComplete/blob/PIES/STAN.zip">STAN.zip</a>
 <span class="tree-line">    └──</span> <a href="https://github.com/nulsie/DevRepoComplete/blob/PIES/LICENSE.txt?raw=true">LICENSE.txt</a></span></span>
 </pre>
@@ -253,16 +253,4 @@
         </div>
     </div>
 </body>
-<script>
-function toggleDir(dirId, element) {
-    const dir = document.getElementById(dirId);
-    if (dir.style.display === "none") {
-        dir.style.display = "inline"; // Inline keeps the pre formatting intact
-        element.innerText = element.innerText.replace('[+]', '[-]');
-    } else {
-        dir.style.display = "none";
-        element.innerText = element.innerText.replace('[-]', '[+]');
-    }
-}
-</script>
 </html>
